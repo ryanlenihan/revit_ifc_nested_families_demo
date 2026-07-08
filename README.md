@@ -16,7 +16,7 @@ This can be particularly problematic for:
 
 When a family is nested inside another family, the export behaviour depends on whether the nested family is configured as **Shared**.
 
-## Key Finding
+## What do you mean it needs to be shared?!
 
 ✅ **Shared nested families export as individual IFC elements and retain their own properties.**
 
@@ -44,7 +44,9 @@ Open the nested family and enable the **Shared** setting:
 
 `Family Category and Parameters → Shared`
 
-![Shared Family Setting](images/shared-family-setting.png)
+![Shared Family Setting](RevitRibbon.png)
+
+![Shared Family Setting](NestedFamilyProperties.png)
 
 Reload the family into the host family and then into the project.
 
@@ -65,7 +67,7 @@ Benefits:
 
 Example:
 
-![Shared Family IFC Result](images/shared-family-ifc.png)
+![Shared Family IFC Result](BIMVision_Shared.png)
 
 The IFC viewer shows:
 
@@ -82,7 +84,7 @@ The non-shared sphere family does not export as a separate IFC object.
 
 Example:
 
-![Non-Shared Family IFC Result](images/non-shared-family-ifc.png)
+![Non-Shared Family IFC Result](BIMVision_NonShared.png)
 
 Observed behaviour:
 
@@ -133,7 +135,7 @@ Using **Shared nested families** is generally the preferred approach when the ne
 
 ***
 
-## Conclusion
+## So what you gonna do?
 
 If a nested family needs to appear as a separate object in IFC and carry its own metadata, it must be configured as **Shared**.
 
@@ -141,4 +143,4 @@ This simple test model demonstrates the difference between shared and non-shared
 
 ***
 
-*Tested using Autodesk Revit and IFC export workflows commonly used on infrastructure and building projects. Results may vary depending on Revit version, IFC schema and export configuration, but the shared vs non-shared behaviour demonstrated here is generally consistent.*
+*Tested using Autodesk Revit 2025 and standard IFC 4.3 export configuration.*
