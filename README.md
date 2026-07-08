@@ -67,7 +67,7 @@ Benefits:
 
 Example:
 
-![Shared Family IFC Result](BIMVision_Shared.png)
+![Shared Family IFC Result](BImVision_Shared.png)
 
 The IFC viewer shows:
 
